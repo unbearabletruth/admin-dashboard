@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
   }
 
 body {
@@ -17,11 +18,11 @@ body {
 .sidebar {
     display: grid;
     grid-row: 1 / 6;
-    background-color: #0ea5e9;
+    background-color: #818cf8;
     grid-template-rows: 1fr 4fr 6fr;
     padding: 20px;
     color: #f8fafc;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     align-items: center;
 }
@@ -57,7 +58,7 @@ input {
     justify-content: center;
     gap: 25px;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 img.bell {
@@ -77,10 +78,12 @@ img.avatar {
 
 .greet {
     font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 5px;
 }
 
 .name {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
 }
 
@@ -118,7 +121,7 @@ button {
     width: 100px;
     height: 40px;
     border-radius: 20px;
-    background-color: #0ea5e9;
+    background-color: #818cf8;
     border: 0px;
     color: white;
     font-size: 14px;
@@ -126,7 +129,7 @@ button {
 }
 
 .logo {
-    font-size: 32px;
+    font-size: 28px;
 }
 
 ul {
@@ -144,7 +147,7 @@ li {
     align-items: center;
     grid-template: 1fr 1fr/ 3fr 2fr;
     grid-column: 2 / 5;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    box-shadow: rgba(0, 0, 0, 1) 0px 3px 8px;
     background-color: white;
     padding-bottom: 15px;
 }
@@ -154,7 +157,7 @@ li {
 }
 
 .content {
-    background-color: #e5e5e5;
+    background-color: #f5f3ff;
     display: grid;
     grid-template-rows: 1fr 12fr 1fr 12fr;
     grid-template-columns: 3fr 1fr;
@@ -172,17 +175,38 @@ li {
 }
 
 .card {
+    display: grid;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 8px;
     padding: 25px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-left: 8px solid;
+    border-left-color: #c4b5fd;
+}
+
+p.cardtitle {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+p.cardtext {
+    color: #525252;
+}
+
+.cardicons {
+    display: flex;
+    justify-self: center;
+    gap: 20px;
+    width: 25px;
+    height: auto;
+    filter: invert(26%) sepia(0%) saturate(1443%) hue-rotate(242deg) brightness(85%) contrast(89%);
 }
 
 
 .announcements {
     background-color: white;
     display: grid;
-    padding: 30px;
+    padding: 25px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     height: 75%;
@@ -191,7 +215,37 @@ li {
 .trending {
     background-color: white;
     display: grid;
-    padding: 30px;
+    padding: 25px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.antitle {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.antext {
+    font-size: 13px;
+    color: #525252;
+}
+
+.person {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.travatar {
+    width: 45px;
+    height: auto;
+}
+
+p.projectinfo {
+    color: #525252;
+    font-size: 13px;
+}
+
+p.projectauthor {
+    font-size: 14px;
 }
